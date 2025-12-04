@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <title>ShoreSquad | Rally Your Crew for Beach Cleanups</title>
+    <meta
+        name="description"
+        content="ShoreSquad helps you and your friends find, plan, and join beach cleanups using weather-aware maps and fun social features."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <div class="nav__brand">
+                <span class="nav__logo-circle" aria-hidden="true"></span>
+                <span class="nav__logo-text">ShoreSquad</span>
+            </div>
+            <button
+                class="nav__toggle"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+            >
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__links" id="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#events">Cleanups</a></li>
+                <li><a href="#community">Community</a></li>
+                <li>
+                    <a class="nav__cta" href="#cta">Get Started</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="hero" id="top">
+            <div class="hero__content">
+                <h1>Rally your crew. Clean the shore. Repeat.</h1>
+                <p>
+                    ShoreSquad helps you find the next beach cleanup, check the
+                    weather, and coordinate with your friends&mdash;all in one
+                    dope map app.
+                </p>
+                <div class="hero__actions">
+                    <a href="#events" class="btn btn--primary">Join a cleanup</a>
+                    <a href="#cta" class="btn btn--ghost">Host your own</a>
+                </div>
+                <p class="hero__subtext">
+                    Weather-aware, map-powered, built for eco-active squads.
+                </p>
+            </div>
+            <div class="hero__visual" aria-hidden="true">
+                <div class="hero__map-card">
+                    <div class="hero__map-header">
+                        <span class="hero__status-dot hero__status-dot--green"></span>
+                        <span class="hero__map-title">Today’s hotspots</span>
+                    </div>
+                    <div class="hero__map-body">
+                        <div class="hero__map-pill">Sunny · 27°C</div>
+                        <div class="hero__map-pill">Low tide · 4:13 PM</div>
+                        <div class="hero__map-pill">Trash level: High</div>
+                        <div class="hero__map-blob hero__map-blob--one"></div>
+                        <div class="hero__map-blob hero__map-blob--two"></div>
+                        <div class="hero__map-blob hero__map-blob--three"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="main">
+        <!-- Features -->
+        <section id="features" class="section section--alt">
+            <div class="section__inner">
+                <header class="section__header">
+                    <h2>Built for beach heroes and their squads</h2>
+                    <p>
+                        Map, weather, and social features designed to make
+                        eco-action simple, safe, and genuinely fun.
+                    </p>
+                </header>
+
+                <div class="grid grid--3">
+                    <article class="card feature-card">
+                        <h3>Weather-aware planning</h3>
+                        <p>
+                            See surf conditions, tide times, and rain forecasts
+                            so your cleanup hits at the perfect time.
+                        </p>
+                    </article>
+                    <article class="card feature-card">
+                        <h3>Map-based meetups</h3>
+                        <p>
+                            Pin meeting points, see live turnout, and share
+                            precise locations with your crew in seconds.
+                        </p>
+                    </article>
+                    <article class="card feature-card">
+                        <h3>Social squad tools</h3>
+                        <p>
+                            Create squads, track your impact, and collect
+                            streaks for every kilo of trash you clear together.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <section id="map" class="section">
+            <div class="section__inner">
+                <header class="section__header section__header--split">
+                    <div>
+                        <h2>Find your next cleanup spot</h2>
+                        <p>
+                            Explore nearby beaches, check live conditions, and
+                            see where other squads are already active.
+                        </p>
+                    </div>
+                    <div class="section__controls">
+                        <label class="field">
+                            <span class="field__label">Location</span>
+                            <input
+                                type="search"
+                                class="field__input"
+                                placeholder="Search beaches or neighbourhoods"
+                                aria-label="Search for beaches or neighbourhoods"
+                            />
+                        </label>
+                        <button class="btn btn--subtle" type="button">
+                            Use my location
+                        </button>
+                    </div>
+                </header>
+
+                <div class="map-shell" role="img" aria-label="Map preview showing nearby beach cleanups">
+                    <div class="map-shell__pill">Map coming soon · Prototype</div>
+                    <div class="map-shell__marker map-shell__marker--primary">
+                        <span class="map-shell__marker-title">East Coast</span>
+                        <span class="map-shell__marker-meta">Sat · 9:00 AM</span>
+                    </div>
+                    <div class="map-shell__marker map-shell__marker--secondary">
+                        <span class="map-shell__marker-title">Sentosa</span>
+                        <span class="map-shell__marker-meta">Sun · 4:30 PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events / Cleanups -->
+        <section id="events" class="section section--alt">
+            <div class="section__inner">
+                <header class="section__header section__header--split">
+                    <div>
+                        <h2>Upcoming beach cleanups</h2>
+                        <p>
+                            Join a public cleanup near you or host your own.
+                        </p>
+                    </div>
+                    <div class="section__controls section__controls--compact">
+                        <label class="field">
+                            <span class="field__label">Filter</span>
+                            <select
+                                class="field__input"
+                                id="event-filter"
+                                aria-label="Filter cleanups"
+                            >
+                                <option value="all">All cleanups</option>
+                                <option value="today">Today</option>
+                                <option value="weekend">This weekend</option>
+                                <option value="full">Almost full</option>
+                            </select>
+                        </label>
+                    </div>
+                </header>
+
+                <div class="grid grid--3" id="event-list">
+                    <article
+                        class="card event-card"
+                        data-tags="today"
+                    >
+                        <div class="event-card__meta">
+                            <span class="event-card__badge">Today</span>
+                            <span class="event-card__weather">🌤 27°C · Light breeze</span>
+                        </div>
+                        <h3>East Coast Sunrise Sweep</h3>
+                        <p>
+                            Meet at Carpark C. Gloves and bags provided. Chill
+                            breakfast after with the squad.
+                        </p>
+                        <p class="event-card__details">
+                            7:30–9:30 AM · 28/50 spots
+                        </p>
+                        <button class="btn btn--primary event-card__btn" type="button">
+                            Join this cleanup
+                        </button>
+                    </article>
+
+                    <article
+                        class="card event-card"
+                        data-tags="weekend full"
+                    >
+                        <div class="event-card__meta">
+                            <span class="event-card__badge event-card__badge--warm">
+                                Sat
+                            </span>
+                            <span class="event-card__weather">☁️ 29°C · Cloudy</span>
+                        </div>
+                        <h3>Sentosa Sunset Squad</h3>
+                        <p>
+                            Golden-hour cleanup plus chill hangout. Bring your
+                            own bottle – we’ll handle the rest.
+                        </p>
+                        <p class="event-card__details">
+                            5:00–7:00 PM · 42/45 spots
+                        </p>
+                        <button class="btn btn--outline event-card__btn" type="button">
+                            Almost full – grab a spot
+                        </button>
+                    </article>
+
+                    <article
+                        class="card event-card"
+                        data-tags="weekend"
+                    >
+                        <div class="event-card__meta">
+                            <span class="event-card__badge">Sun</span>
+                            <span class="event-card__weather">🌤 30°C · Low tide</span>
+                        </div>
+                        <h3>Punggol Coast Crew</h3>
+                        <p>
+                            Family-friendly cleanup with games and mini eco-quiz
+                            for kids and teens.
+                        </p>
+                        <p class="event-card__details">
+                            9:00–11:00 AM · 12/40 spots
+                        </p>
+                        <button class="btn btn--primary event-card__btn" type="button">
+                            Join this cleanup
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community -->
+        <section id="community" class="section">
+            <div class="section__inner">
+                <header class="section__header">
+                    <h2>Eco-action is better with friends</h2>
+                    <p>
+                        Turn solo effort into squad energy. Track your impact,
+                        unlock streaks, and flex your clean-shore stats.
+                    </p>
+                </header>
+
+                <div class="grid grid--3">
+                    <article class="card stat-card">
+                        <p class="stat-card__label">Squad streak</p>
+                        <p class="stat-card__value">12</p>
+                        <p class="stat-card__hint">clean weekends in a row</p>
+                    </article>
+                    <article class="card stat-card">
+                        <p class="stat-card__label">Trash collected</p>
+                        <p class="stat-card__value">436 kg</p>
+                        <p class="stat-card__hint">logged by your crews</p>
+                    </article>
+                    <article class="card stat-card">
+                        <p class="stat-card__label">Beaches cleaned</p>
+                        <p class="stat-card__value">9</p>
+                        <p class="stat-card__hint">and counting 🌊</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="section section--cta">
+            <div class="section__inner section__inner--cta">
+                <div class="section__header">
+                    <h2>Ready to squad up for the next cleanup?</h2>
+                    <p>
+                        Create your crew, pick a beach, and let ShoreSquad handle
+                        the weather, map, and logistics.
+                    </p>
+                </div>
+                <form class="cta-form" novalidate>
+                    <label class="field">
+                        <span class="field__label">Email</span>
+                        <input
+                            type="email"
+                            class="field__input"
+                            placeholder="you@example.com"
+                            aria-label="Enter your email to get early access"
+                            required
+                        />
+                    </label>
+                    <label class="field">
+                        <span class="field__label">Preferred beach</span>
+                        <input
+                            type="text"
+                            class="field__input"
+                            placeholder="e.g. East Coast, Sentosa"
+                            aria-label="Your preferred beach for cleanups"
+                        />
+                    </label>
+                    <button class="btn btn--primary btn--full" type="submit">
+                        Get early access
+                    </button>
+                    <p class="cta-form__hint">
+                        No spam. Just clean shores and occasional impact updates.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p>&copy; <span id="year"></span> ShoreSquad. Built for beach-loving crews.</p>
+            <nav aria-label="Footer navigation">
+                <a href="#top">Back to top</a>
+                <a href="#events">Upcoming cleanups</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+</body>
+</html>
