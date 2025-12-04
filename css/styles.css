@@ -623,6 +623,30 @@ body {
 .site-footer__inner a:hover {
     text-decoration: underline;
 }
+.weather-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.weather-card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 24px rgba(2,48,71,0.06);
+}
+
+.weather-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.weather-metric {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
 
 /* =========
    Responsive
